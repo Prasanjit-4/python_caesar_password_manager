@@ -34,9 +34,7 @@ def gen_passw():
 def add_passw():
     f=open("key.txt",'r')
     key=f.read()
-    print(key)
     u_key=input("Enter master key: ")
-    print(u_key==key,len(u_key),len(key))
     if u_key==key:
         with open("passwords.txt","r+") as passf:
             lis=passf.readlines()
